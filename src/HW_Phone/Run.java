@@ -5,9 +5,7 @@ public class Run {
     public static void main(String[] args) {
 
         Phone phone1 = new Phone(4545764, "samsung", 200);
-
         Phone phone2 = new Phone(9985656, "mi", 150);
-
         Phone phone3 = new Phone();
 
         phone3.setNumber(8779851);
