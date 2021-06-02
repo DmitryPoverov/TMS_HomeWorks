@@ -14,6 +14,13 @@ public class BookProgram {
 
         Book book4 = new Book(Type.BELLETRISTIC, "To the lighthouse", "W.Wolf");
         System.out.printf("\nBook '%s' of an author %s has a type %s", book4.name, book4.author, book4.type);
+
+        switch (book1.type) {
+            case BELLETRISTIC -> System.out.println("Belletristic");
+            case SCIENCE -> System.out.println("Science");
+            case PHANTASY -> System.out.println("Phantasy");
+            case SCIENCE_FICTION -> System.out.println("Science fiction");
+        }
     }
 }
 

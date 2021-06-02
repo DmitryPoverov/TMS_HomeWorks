@@ -1,16 +1,16 @@
 package TMS_HomeLesson;
 
-class Dancer {
-    private String name;
-    private int age;
+class OriginDancer {
+    String name;
+    int age;
 
-    public Dancer(String name, int age) {
+    public OriginDancer(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     public void dance() {
-        System.out.println(toString() + "Я танцую как все.");
+        System.out.printf("Я %s, мне %d, я танцую как все.\n", name, age);
     }
 
     public String toString() {
@@ -18,38 +18,38 @@ class Dancer {
     }
 }
 
-class ElectricBoogieDancer extends Dancer {
+class ElectricBoogieDancer extends OriginDancer {
     public ElectricBoogieDancer(String name, int age) {
         super(name, age);
     }
 
     public void dance() {
-        System.out.println( toString() + "Я танцую электрик буги!");
+        System.out.printf("Я %s, мне %d, я танцую  электрик буги!\n", name, age);
     }
 }
 
-class BreakDankDancer extends Dancer{
+class BreakDankDancer extends OriginDancer{
 
     public BreakDankDancer(String name, int age) {
         super(name, age);
     }
 
     public void dance(){
-        System.out.println(toString() + "Я танцую брейк-данс!");
+        System.out.printf("Я %s, мне %d, я танцую брейк-данс!\n", name, age);
     }
 }
 
-public class Main {
+public class Dancer {
 
     public static void main(String[] args) {
 
-        Dancer dancer = new Dancer("Антон", 18);
-        Dancer breakDanceDancer = new BreakDankDancer("Алексей", 19);
-        Dancer electricBoogieDancer = new ElectricBoogieDancer("Игорь", 20);
+        OriginDancer dancer = new OriginDancer("Антон", 18);
+        OriginDancer breakDanceDancer = new BreakDankDancer("Алексей", 19);
+        OriginDancer electricBoogieDancer = new ElectricBoogieDancer("Игорь", 20);
 
-        List <Dancer> discotheque = Arrays.asList(dancer, breakDanceDancer, electricBoogieDancer);
-        for (Dancer d : discotheque) {
-            d.dance();// полиморфный вызов метода
-        }
+        dancer.dance();
+        breakDanceDancer.dance();
+        electricBoogieDancer.dance();
+
     }
 }
