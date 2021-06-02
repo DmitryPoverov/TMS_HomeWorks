@@ -16,10 +16,25 @@ public class BookProgram {
         System.out.printf("\nBook '%s' of an author %s has a type %s", book4.name, book4.author, book4.type);
 
         switch (book1.type) {
-            case BELLETRISTIC -> System.out.println("Belletristic");
-            case SCIENCE -> System.out.println("Science");
-            case PHANTASY -> System.out.println("Phantasy");
-            case SCIENCE_FICTION -> System.out.println("Science fiction");
+            case BELLETRISTIC -> System.out.println("\nBelletristic");
+            case SCIENCE -> System.out.println("\nScience");
+            case PHANTASY -> System.out.println("\nPhantasy");
+            case SCIENCE_FICTION -> System.out.println("\nScience fiction");
+        }
+
+        switch (book2.type) {
+            case BELLETRISTIC:
+                System.out.println("Belletristic");
+                break;
+            case SCIENCE:
+                System.out.println("Science");
+                break;
+            case PHANTASY:
+                System.out.println("Phantasy");
+                break;
+            case SCIENCE_FICTION:
+                System.out.println("Science fiction");
+                break;
         }
     }
 }
