@@ -4,7 +4,7 @@ public class runningMatrices {
 
     public static void main(String[] args) {
 
-        Matrix m1 = new Matrix(3, 2);
+        Matrix m1 = new Matrix(2, 3);
 
         Matrix m2 = new Matrix(3, 2);
 
