@@ -15,5 +15,8 @@ public class runningMatrices {
         m1.matrix = m1.sumMatrices(m2.matrix);
 
         m1.showMatrix();
+
+        m2.multiplying(10);
+        m2.showMatrix();
     }
 }

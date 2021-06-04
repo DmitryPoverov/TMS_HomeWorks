@@ -1,5 +1,7 @@
 package Lesson6_2;
 
+import java.util.Arrays;
+
 public class Running {
 
     public static void main(String[] args) {
@@ -18,5 +20,33 @@ public class Running {
         Group team = new Group("08-XT3", students);
 
         team.getTotalInfo();
+
+        int[] array = new int [4];
+
+        for (int i=0; i<array.length; i++) {
+            array[i]=i+1;
+        }
+
+        for (int i: array) {
+            System.out.print(i + " ");
+        }
+
+        int[] array1;
+
+        array1 = array.clone();
+
+        for (int i: array1) {
+            System.out.print(i + " ");
+        }
+
+        array1[0] = 999;
+
+        for (int i: array) {
+            System.out.print(i + " ");
+        }
+
+        for (int i: array1) {
+            System.out.print(i + " ");
+        }
     }
 }

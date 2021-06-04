@@ -16,5 +16,4 @@ public class Group {
             System.out.println(", his group is " + name);
         }
     }
-
 }
