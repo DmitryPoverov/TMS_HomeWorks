@@ -13,6 +13,10 @@ class Aspirant extends Student {
         return scientificWork;
     }
 
+    public void setScientificWork(String scientificWork) {
+        this.scientificWork = scientificWork;
+    }
+
     int getScholarship() {
         if (getAverageMark()<5) {
             return 180;
@@ -22,6 +26,7 @@ class Aspirant extends Student {
     }
 
     public void getInfo() {
-        System.out.printf("\nAbout aspirant:\n%s, %s, %s, %.1f", getFirstName(), getLastName(), getGroup(), getAverageMark());
+        System.out.printf("\nAbout aspirant:\n%s, %s, %s, %.1f, %s",
+                getFirstName(), getLastName(), getGroup(), getAverageMark(), scientificWork);
     }
 }

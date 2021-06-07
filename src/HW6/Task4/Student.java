@@ -49,4 +49,9 @@ public class Student {
             return 100;
         }
     }
+
+    public void getInfo() {
+        System.out.printf("\nAbout student:\n%s, %s, %s, %.1f",
+                firstName, lastname, group, averageMark);
+    }
 }
