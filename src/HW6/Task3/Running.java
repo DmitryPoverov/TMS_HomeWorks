@@ -1,4 +1,4 @@
-package HW6.Two_Numbers_Recursion;
+package HW6.Task3;
 
 import java.util.Scanner;
 
