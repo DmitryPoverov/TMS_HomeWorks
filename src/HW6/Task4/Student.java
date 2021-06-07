@@ -14,45 +14,39 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public double getAverageMark () {
-        return averageMark;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
-
-    public String getFirstName () {
+    public String getFirstName() {
         return firstName;
     }
 
-    int getScholarship () {
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+    public String getLastName() {
+        return firstName;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
+    public String getGroup() {
+        return group;
+    }
+
+    public void setAverageMark(double averageMark) {
+        this.averageMark = averageMark;
+    }
+    public double getAverageMark() {
+        return averageMark;
+    }
+
+    int getScholarship() {
         if (averageMark<5) {
             return 80;
         } else {
             return 100;
         }
     }
-}
-
-class Aspirant extends Student {
-
-    private String scientificWork;
-
-    public Aspirant (String firstName, String lastname, String group, double averageMark, String scientificWork) {
-        super(firstName, lastname, group, averageMark);
-        this.scientificWork = scientificWork;
-    }
-
-    public String getFirstName () {
-        return firstName;
-    }
-    public String getScientificWork() {
-        return scientificWork;
-    }
-
-    int getScholarship () {
-        if (getAverageMark()<5) {
-            return 180;
-        } else {
-            return 200;
-        }
-    }
-
 }
