@@ -25,5 +25,11 @@ public class Running {
 
         SportCar car4 = new SportCar("Porch", "retro", 1460, car2.getName(), car2.getSeniority(), 410, "RR", 285);
         car4.printInfo();
+
+        car1.go();
+        car2.stop();
+        car3.turnLeft();
+        car4.turnRight();
+
     }
 }
