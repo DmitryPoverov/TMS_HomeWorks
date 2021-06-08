@@ -26,4 +26,18 @@ public class Lorry extends Car{
                 driver.getFIO(), driver.getSeniority(),
                 engine.getPower(), engine.getProducer(), carrying);
     }
+
+    public void go() {
+        System.out.println("Truck is going");
+    }
+    public void stop() {
+        System.out.println("Truck stopped");
+    }
+    public void turnLeft() {
+        System.out.println("Track is turning to the left");
+    }
+    public void turnRight() {
+        System.out.println("Track is turning to the right");
+    }
+
 }

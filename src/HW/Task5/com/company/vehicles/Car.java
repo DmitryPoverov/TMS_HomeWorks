@@ -54,16 +54,16 @@ public class Car {
     }
 
     public void go() {
-        System.out.println("Go");
+        System.out.println("Car is going");
     }
     public void stop() {
-        System.out.println("Stop");
+        System.out.println("Car stopped");
     }
     public void turnLeft() {
-        System.out.println("Turning to the left");
+        System.out.println("Car is turning to the left");
     }
     public void turnRight() {
-        System.out.println("Turning to the right");
+        System.out.println("Car is turning to the right");
     }
 
 

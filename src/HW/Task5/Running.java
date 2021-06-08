@@ -28,8 +28,8 @@ public class Running {
 
         car1.go();
         car2.stop();
-        car3.turnLeft();
-        car4.turnRight();
+        car3.turnRight();
+        car4.turnLeft();
 
     }
 }

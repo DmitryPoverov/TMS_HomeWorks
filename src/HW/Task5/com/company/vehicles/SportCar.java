@@ -24,4 +24,18 @@ public class SportCar extends Car {
                 driver.getFIO(), driver.getSeniority(),
                 engine.getPower(), engine.getProducer(), speedLimit);
     }
+
+    public void go() {
+        System.out.println("Sport car is going");
+    }
+    public void stop() {
+        System.out.println("Sport car stopped");
+    }
+    public void turnLeft() {
+        System.out.println("Sport car is turning to the left");
+    }
+    public void turnRight() {
+        System.out.println("Sport car is turning to the right");
+    }
+
 }
