@@ -1,4 +1,4 @@
-package HW6.Task4;
+package HW.Task4;
 
 class Aspirant extends Student {
 

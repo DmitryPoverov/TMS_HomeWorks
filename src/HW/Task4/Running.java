@@ -1,15 +1,17 @@
-package HW6.Task4;
+package HW.Task4;
 
 public class Running {
 
     public static void main(String[] args) {
 
         Student stud0 = new Student("Bob", "Bob", "08HT", 5.0);
+
         Student stud1 = new Student();
         stud1.setFirstName("Tod");
         stud1.setLastname("Tod");
         stud1.setGroup("08PG");
         stud1.setAverageMark(4.0);
+
         Student stud2 = new Aspirant("Tim", "Tim", "07RT", 4.9, "Work0");
         Aspirant stud3 = new Aspirant("Sam", "Sam", "09TG", 5.0, "Work1");
         Aspirant stud4 = new Aspirant("Tom", "Tom", "10VV", 4.6, "Work2");

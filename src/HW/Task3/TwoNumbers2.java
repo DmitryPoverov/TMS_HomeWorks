@@ -1,4 +1,4 @@
-package HW6.Task3;
+package HW.Task3;
 
 public class TwoNumbers2 {
 
