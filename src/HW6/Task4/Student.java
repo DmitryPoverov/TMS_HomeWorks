@@ -7,6 +7,9 @@ public class Student {
     private String group;
     private double averageMark;
 
+    public Student() {
+    }
+
     public Student (String firstName, String lastname, String group, double averageMark) {
         this.firstName = firstName;
         this.lastname =lastname;
