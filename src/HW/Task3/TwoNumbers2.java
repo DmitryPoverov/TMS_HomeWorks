@@ -12,15 +12,15 @@ public class TwoNumbers2 {
 
         if (a<b) {
             this.b = b+1;
+            temp = this.b;
 
         } else if (a>b) {
             this.b = b-1;
+            temp = this.b;
 
         } else if (a==b) {
             this.b = b;
         }
-
-        temp = this.b;
     }
 
     void numArray2 () {
