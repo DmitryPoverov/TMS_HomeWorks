@@ -13,7 +13,7 @@ public class Running {
         System.out.print("Enter the second and press 'Enter': ");
         int choice2 = sc.nextInt();
 
-        System.out.printf("\nFirst number: %d,\nSecond number: %d.\n", choice1, choice2);
+        System.out.printf("\nFirst number: %d\nSecond number: %d\n", choice1, choice2);
 
         TwoNumbers tn = new TwoNumbers(choice1, choice2);
 
