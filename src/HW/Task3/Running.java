@@ -24,3 +24,16 @@ public class Running {
         tn2.numArray2();                                        // если a>b, то выдаст ошибку переполнения стека
     }
 }
+//        if ((a<b) && (a!=temp)) {
+//        temp--;
+//        numArray2();
+//        System.out.print(temp++ + " ");
+//
+//        } else if ((a>b) && (a!=temp)) {
+//        temp++;
+//        numArray2();
+//        System.out.print(temp-- + " ");
+//
+//        }  else if (a==b) {
+//        System.out.println(a);
+//        }
