@@ -20,20 +20,7 @@ public class Running {
         tn.numArray();
         System.out.println();
 
-        TwoNumbers2 tn2 = new TwoNumbers2(choice1, choice2);    // работает только, если a<b
-        tn2.numArray2();                                        // если a>b, то выдаст ошибку переполнения стека
+        TwoNumbers2 tn2 = new TwoNumbers2(choice1, choice2);
+        tn2.numArray2();
     }
 }
-//        if ((a<b) && (a!=temp)) {
-//        temp--;
-//        numArray2();
-//        System.out.print(temp++ + " ");
-//
-//        } else if ((a>b) && (a!=temp)) {
-//        temp++;
-//        numArray2();
-//        System.out.print(temp-- + " ");
-//
-//        }  else if (a==b) {
-//        System.out.println(a);
-//        }
