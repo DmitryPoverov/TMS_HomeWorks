@@ -28,6 +28,6 @@ public class Triangle extends Shape {
                 \nHere is a triangle.
                 Its top coordinates are [%d;%d]
                 Its color is %s
-                """, x, y, super.getColor());
+                """, x, y, getColor());
     }
 }

@@ -35,6 +35,6 @@ public class Rectangle extends Shape {
                 \nHere is a rectangle.
                 Its tops coordinates are [%d;%d] [%d;%d]
                 Its color is %s
-                """, x1, y1, x2, y2, super.getColor());
+                """, x1, y1, x2, y2, getColor());
     }
 }
