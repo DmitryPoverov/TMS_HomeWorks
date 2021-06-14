@@ -1,4 +1,4 @@
-package HW.Task_Additoanal_2;
+package HW.Task_Additional_2;
 
 public class Running {
 

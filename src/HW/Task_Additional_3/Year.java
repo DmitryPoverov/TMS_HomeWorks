@@ -1,4 +1,4 @@
-package HW.Task_Additoanal_3;
+package HW.Task_Additional_3;
 
 public enum Year {
 
@@ -43,5 +43,4 @@ public enum Year {
                         case AUTUMN -> System.out.println("\nI don't love autumn\n");
                 }
         }
-
 }

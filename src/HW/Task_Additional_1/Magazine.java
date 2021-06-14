@@ -1,11 +1,15 @@
-package HW.Task_Additoanal_1;
+package HW.Task_Additional_1;
 
-class Book implements Printable {
+class Magazine implements Printable {
 
     private String name;
 
-    public Book(String name) {
+    public Magazine(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -13,12 +17,11 @@ class Book implements Printable {
         System.out.println(name);
     }
 
-    static void printBooks (Printable[] printable) {
+    static void printMagazines (Printable[] printable) {
         for (Printable p: printable) {
             if (p instanceof Magazine) {
                 p.print();
             }
         }
     }
-
 }
