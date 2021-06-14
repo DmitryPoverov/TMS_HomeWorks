@@ -5,6 +5,7 @@ public enum Year {
         WINTER(-10),
         SPRING (9),
         SUMMER (23) {
+                @Override
                 public String seasonDescription () {
                         return "a warm season";
                 }
@@ -13,8 +14,8 @@ public enum Year {
 
         private int temp;
 
-        Year (int temp) {
-                this.temp = temp;
+        Year (int t) {
+                temp = t;
         }
 
         int getTemp() {
@@ -25,7 +26,7 @@ public enum Year {
                 return "a cold season";
         }
 
-        protected static void favoriteSeason (Year season) {
+        protected static void favoriteSeason1 (Year season) {
                 switch (season) {
                         case WINTER -> System.out.println("\nI love winter\n");
                         case SPRING -> System.out.println("\nI don't love spring\n");
@@ -33,4 +34,14 @@ public enum Year {
                         case AUTUMN -> System.out.println("\nI don't love autumn\n");
                 }
         }
+
+        protected void favoriteSeason2 (Year season) {
+                switch (season) {
+                        case WINTER -> System.out.println("\nI love winter\n");
+                        case SPRING -> System.out.println("\nI don't love spring\n");
+                        case SUMMER -> System.out.println("\nI don't love summer\n");
+                        case AUTUMN -> System.out.println("\nI don't love autumn\n");
+                }
+        }
+
 }

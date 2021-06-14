@@ -3,12 +3,12 @@ package HW.Task_Additoanal_3;
 public class Running {
     public static void main(String[] args) {
 
-        Year season;
-
         System.out.println("\nHere are all elements of the 'Year' enum:");
         for (Year s : Year.values()) {
             System.out.println(s);
         }
+
+        Year season;
 
         season = Year.valueOf("WINTER");    // выдаст ошибку, если компилятор в enum не найдет введенную стороку.
 
@@ -17,7 +17,8 @@ public class Running {
             System.out.println(s.seasonDescription());
         }
 
-        Year.favoriteSeason(season);
+        Year.favoriteSeason1(season);
+        season.favoriteSeason2(season);
 
         for (int i=0; i<Year.values().length; i++) {
             System.out.println("\n" + Year.values()[i]);
