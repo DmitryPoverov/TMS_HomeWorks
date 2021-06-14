@@ -1,4 +1,4 @@
-package HW.Task_Additoanal_3;
+package HW.Task_Additional_3;
 
 public class Running {
     public static void main(String[] args) {
