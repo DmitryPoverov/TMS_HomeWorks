@@ -1,4 +1,4 @@
-package CW.Tasks_10_06_2021.Tournament.Task2;
+package HW.Task_Additoanal_2;
 
 public class Dram implements Instrument {
 

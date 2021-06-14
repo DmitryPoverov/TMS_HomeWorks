@@ -1,10 +1,12 @@
-package CW.Tasks_10_06_2021.Tournament.Task3;
+package HW.Task_Additoanal_3;
 
 public class Running {
 
     public static void main(String[] args) {
 
-        Year year = Year.WINTER;
+        Year season = Year.WINTER;
+
+
 
     }
 }
