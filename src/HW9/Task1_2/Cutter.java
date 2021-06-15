@@ -6,6 +6,10 @@ public class Cutter {
     private char c1;
     private char c2;
 
+    public Cutter(String s) {
+        this.s = s;
+    }
+
     public Cutter(String s, char c1, char c2) {
         this.s = s;
         this.c1 = c1;
@@ -27,4 +31,19 @@ public class Cutter {
         return s;
     }
 
+    public String change3to0() {
+        if (s.length() > 3) {
+            s = s.replace(s.charAt(3), s.charAt(0));
+        }
+        return s;
+    }
+
+    public String palindromeSearch() {
+        String s1 = "";
+        char[] charArray = s.toCharArray();
+        for (int i=charArray.length-1; i>=0; i--) {
+            s1 += charArray[i];
+        }
+        return s1;
+    }
 }
