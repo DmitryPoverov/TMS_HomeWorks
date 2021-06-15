@@ -14,6 +14,9 @@ public class TestClass {
 
 //    @Override
 //    public String toString() {
-//        return getClass().getSimpleName() + "\na=" + a + ", b=" + b + ", c=" + c + ".\n";
+//        return getClass().getSimpleName() +
+//                ": a=" + a +
+//                ", b=" + b +
+//                ", c=" + c + ".\n";
 //    }
 }

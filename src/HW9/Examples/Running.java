@@ -1,13 +1,11 @@
 package HW9.Examples;
-
 public class Running {
-
     public static void main(String[] args) {
 
         //String test1 = "01234567890";
         String test1 = "It's a test string";
         String test2 = "iT'S A tEsT STriNG";
-        String test5 = " \t  iT'S A tEsT STriNG  \n ";
+        String test5 = " \t  IT'S A TEST STRING  \n ";
         TestClass copy1 = new TestClass(4, 2.5, "***Test***");
 
         System.out.println("\n concat():");
@@ -27,8 +25,12 @@ public class Running {
         System.out.println("\n join():");
         String test4 = String.join("-=:=-", test1, test2);
         System.out.println(test4);
+        String test6 = "SS";
+        test6.join("-=:=-", test1, test2);
+        System.out.println(test6.join("-=:=-", test1, test2));
+        System.out.println(test6);
 
-        System.out.println("\n compare():");
+        System.out.println("\n compareTo():");
         int d = test1.compareTo(test4);
         System.out.println(d);
 
@@ -37,11 +39,11 @@ public class Running {
         System.out.println(test1);
 
         System.out.println("\n getChars():");
-        char[] arr = new char[10];
-        //char[] arr = {'.', '.', '.', '.', '.', '.', '.', '.'};
+        //char[] arr = new char[10];
+        char[] arr = {'.', '.', '.', '.', '.', '.', '.', '.'};
         test1.getChars(5, 9, arr, 2);
         for (char c: arr) {
-            System.out.print(c + " ");
+            System.out.print(c);
         }
 
         System.out.println("\n\n equals():");
@@ -54,23 +56,21 @@ public class Running {
 
         System.out.println("\n regionMatches():");
         b = test1.regionMatches(7, "tEsT", 0, 4);
-        System.out.println("if don't ignore case: " + b);
+        System.out.println("if don't to ignore case: " + b);
         b = test1.regionMatches(true,7, "TEST", 0, 4);
-        System.out.println("if ignore case: " + b);
+        System.out.println("if to ignore case: " + b);
         b = test1.regionMatches(false,7, "TEST", 0, 4);
-        System.out.println("if don't ignore case: " + b);
-        b = test1.regionMatches(7, "tEsT", 0, 4);
-        System.out.println("if don't ignore case: " + b);
+        System.out.println("if don't to ignore case: " + b);
 
-        System.out.println("\n indexOf():");
+        System.out.println("\n indexOf():");        // returns -1 in case of mismatching
         d = test2.indexOf('s');
         System.out.println(d);
 
-        System.out.println("\n lastIndexOf():");
+        System.out.println("\n lastIndexOf():");    // returns -1 in case of mismatching
         d = test2.indexOf('S');
         System.out.println(d);
 
-        System.out.println("\n startsWith(It's):");
+        System.out.println("\n startsWith():");
         b = test2.startsWith("It's");
         System.out.println(b);
 
