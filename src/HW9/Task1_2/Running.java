@@ -21,8 +21,11 @@ public class Running {
 
 // 3) В исходном файле находятся слова, каждое слово на новой стороке. После
 // запуска программы должен создать файл, который будет содержать в себе
-// только полиндромы.
+// только палиндромы.
 
+/*         s = s.replace(' ', '\n');
+         System.out.println(s);*/
+        newCut = new Cutter(s);
         System.out.println(newCut.palindromeSearch());
 
     }

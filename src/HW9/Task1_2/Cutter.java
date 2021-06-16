@@ -1,5 +1,7 @@
 package HW9.Task1_2;
 
+import java.util.Arrays;
+
 public class Cutter {
 
     private String s;
@@ -39,11 +41,47 @@ public class Cutter {
     }
 
     public String palindromeSearch() {
-        String s1 = "";
-        char[] charArray = s.toCharArray();
-        for (int i=charArray.length-1; i>=0; i--) {
-            s1 += charArray[i];
+
+        s = s.replace(", ", " ");
+        int zeroCounter = 0;
+
+        char[] charArray1 = s.toCharArray();        // переделываем исходную строку в массив char[]
+
+        for (char cArr : charArray1) {              // считаем количество пробелов
+            if (cArr == ' ') {
+                zeroCounter++;
+            }
         }
+
+        String[] stringArr = new String[zeroCounter+1]; // по количеству пробеллов инициализируем количество ячеек
+        Arrays.fill(stringArr, "");                 // инициализируем ячейки пустым значением
+
+        for (int i=0, j=0; i<charArray1.length; i++) {  // перебираем массив char[]
+            if (charArray1[i] != ' ') {
+                stringArr[j] += charArray1[i];          // и сохраняем в элементы массива String[]
+            }
+            if (charArray1[i] == ' ') {                 // если натыкаемся на пробел идем в следующую ячейку String[]
+                j++;
+            }
+        }
+
+        for (int i=0; i<stringArr.length; i++) {
+            char[] temp = stringArr[i].toCharArray();
+            stringArr[i] = "";
+            for (int j=temp.length-1; j>=0; j--) {
+                stringArr[i] += temp[j];
+            }
+        }
+
+        for (String str : stringArr) {
+            System.out.println(str);
+        }
+
+        String[] stringArr2 = new String[zeroCounter+1];
+        Arrays.fill(stringArr2, "");
+
+
+
         return s1;
     }
 }
