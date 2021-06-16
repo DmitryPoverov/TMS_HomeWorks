@@ -21,7 +21,7 @@ public class Cutter {
     public String returnString() {
         int a = s.indexOf(c1);
         int b = s.lastIndexOf(c2);
-        if (a!=-1 && b!=-1) {
+        if (a != -1 && b != -1) {
             s = s.substring(a, b);
         } else if (a == -1) {
             s = "There is no one the " + c1 + " character here";
@@ -42,9 +42,7 @@ public class Cutter {
 
     public String palindromeSearch() {
 
-        s = s.replace(", ", " ");
         int zeroCounter = 0;
-
         char[] charArray1 = s.toCharArray();        // переделываем исходную строку в массив char[]
 
         for (char cArr : charArray1) {              // считаем количество пробелов
@@ -53,11 +51,13 @@ public class Cutter {
             }
         }
 
-        String[] stringArr = new String[zeroCounter+1]; // по количеству пробеллов инициализируем количество ячеек
-        Arrays.fill(stringArr, "");                 // инициализируем ячейки пустым значением
+        String[] stringArr = new String[zeroCounter + 1]; // по количеству пробеллов инициализируем количество ячеек
+        Arrays.fill(stringArr, "");                   // инициализируем ячейки пустым значением
 
-        for (int i=0, j=0; i<charArray1.length; i++) {  // перебираем массив char[]
-            if (charArray1[i] != ' ') {
+        for (int i = 0, j = 0; i < charArray1.length; i++) {  // перебираем массив char[]
+            if ((charArray1[i] == (char) 39) ||
+                ((charArray1[i] >= (char) 65) && (charArray1[i] <= (char) 255))) {
+
                 stringArr[j] += charArray1[i];          // и сохраняем в элементы массива String[]
             }
             if (charArray1[i] == ' ') {                 // если натыкаемся на пробел идем в следующую ячейку String[]
@@ -65,24 +65,36 @@ public class Cutter {
             }
         }
 
-        for (int i=0; i<stringArr.length; i++) {
+        for (int i = 0; i < stringArr.length; i++) {    // переворачиваем каждый элемент в массиве стрингов
             char[] temp = stringArr[i].toCharArray();
             stringArr[i] = "";
-            for (int j=temp.length-1; j>=0; j--) {
+            for (int j = temp.length - 1; j >= 0; j--) {
                 stringArr[i] += temp[j];
             }
         }
 
-        for (String str : stringArr) {
-            System.out.println(str);
-        }
-
-        String[] stringArr2 = new String[zeroCounter+1];
+        String[] stringArr2 = new String[zeroCounter + 1];  // делаем пустой массив String[]
         Arrays.fill(stringArr2, "");
 
-        String s1 = "";
+        char[] charArray2 = s.toCharArray();                // заполняем его исходной строкой
+        for (int i = 0, j = 0; i < charArray2.length; i++) {
+            if ((charArray2[i] == (char) 39) ||             // учитываем только ' и все буквы
+                    ((charArray2[i] >= (char) 65) && (charArray2[i] <= (char) 255))) {
 
+                stringArr2[j] += charArray2[i];
+            }
+            if (charArray2[i] == ' ') {
+                j++;
+            }
+        }
 
-        return s1;
+        s = "";
+
+        for (int i=0; i<stringArr.length; i++) {
+            if (stringArr[i].equalsIgnoreCase(stringArr2[i])) {
+                s += (stringArr[i] + " ");
+            }
+        }
+        return s;
     }
 }
