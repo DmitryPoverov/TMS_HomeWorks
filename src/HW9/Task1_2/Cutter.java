@@ -80,6 +80,7 @@ public class Cutter {
         String[] stringArr2 = new String[zeroCounter+1];
         Arrays.fill(stringArr2, "");
 
+        String s1 = "";
 
 
         return s1;
