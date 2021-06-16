@@ -20,7 +20,7 @@ public class Cutter {
 
     public String returnString() {
         int a = s.indexOf(c1);
-        int b = s.indexOf(c2);
+        int b = s.lastIndexOf(c2);
         if (a!=-1 && b!=-1) {
             s = s.substring(a, b);
         } else if (a == -1) {
