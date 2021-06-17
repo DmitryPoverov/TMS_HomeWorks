@@ -20,7 +20,7 @@ public class Running {
 
         tf.sentenceChecker();
 
-        System.out.println(tf.isPalindromes("Aquas rebel read madam."));
+        System.out.println(tf.isPalindromes("Aquas rebel read."));
 
     }
 }
