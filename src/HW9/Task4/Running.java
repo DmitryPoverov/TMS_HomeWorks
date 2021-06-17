@@ -14,11 +14,13 @@ public class Running {
 // 2. Метод принимает строку и проверяет есть ли в строке слово-палиндром. Если
 // есть возвращает true, если нет false
 
-        String s = "Aquas rebel read. Fade squid tea feeders madam. Amber linen relation.";
+        String s = "Aquas rebel read. Fade the  feeders to a madam. Amber linen relation.";
 
         TextFormatter tf = new TextFormatter(s);
 
         tf.sentenceChecker();
+
+        System.out.println(tf.isPalindromes("Aquas rebel read madam."));
 
     }
 }
