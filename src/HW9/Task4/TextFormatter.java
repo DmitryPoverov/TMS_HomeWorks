@@ -15,13 +15,13 @@ public class TextFormatter {
             System.out.println(st);
         }
     }
-
-    public void showStringInfo(String str) {
-        System.out.println("Sentence : \""
-                + str + "\" has "
-                + wordCounter(str) + " words");
-    }
-
+//
+//    public void showStringInfo(String str) {
+//        System.out.println("Sentence : \""
+//                + str + "\" has "
+//                + wordCounter(str) + " words");
+//    }
+//
     public int spaceCounter() {
         int sCounter = 0;
 
@@ -43,8 +43,13 @@ public class TextFormatter {
         }
         return wCounter;
     }
-
-
+//    public String[] stringToArrayString() {
+//        char[] charArray1 = s.toCharArray();
+//        String[] strArray = new String[wordCounter(s)];
+//        for (int i=0, j=0; i<charArray1.length; i++ ) {
+//
+//        }
+//    }
     public boolean isPalindromes(String str) {
         boolean isPalHere = false;
 
@@ -95,11 +100,9 @@ public class TextFormatter {
 //
 //        System.out.println(s);
 //
-        int counter = spaceCounter();
-//
 //        System.out.println(counter);
 //
-        String[] stringArray = new String[counter];
+        String[] stringArray = new String[spaceCounter()];
         Arrays.fill(stringArray, "");
 
         for (int i=0, j=0; i<s.length(); i++) {
@@ -111,9 +114,7 @@ public class TextFormatter {
                 j++;
             }
         }
-//
-//        showStringInArray(stringArray);
-//
+        showStringInArray(stringArray);
 //        for (String str : stringArray) {
 //            showStringInfo(str);
 //        }
