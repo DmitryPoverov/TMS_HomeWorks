@@ -58,7 +58,7 @@ public class Cutter {
         String[] stringArr2 = new String[zeroCounter + 1];      // делаем пустой массив String2[]
         Arrays.fill(stringArr2, "");
 
-        for (int i=0, j=0; i<charArray1.length; i++) {          // перебираем массив char9+[]
+        for (int i=0, j=0; i<charArray1.length; i++) {          // перебираем массив char[]
             if (charArray1[i] == (char) 39 ||                   // записываем только ' и буквы
                 charArray1[i] >= (char) 65 && charArray1[i] <= (char) 122) {
                 stringArr[j] += charArray1[i];                  // и сохраняем в элементы массива String[]
