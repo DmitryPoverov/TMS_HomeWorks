@@ -65,10 +65,10 @@ public class TextFormatter {
                 j++;
             }
         }
-
-        showStringInArray(strArr1);
-        showStringInArray(strArr2);
-
+//
+//        showStringInArray(strArr1);
+//        showStringInArray(strArr2);
+//
         for (int i=0; i<strArr1.length; i++) {
             char[] temp = strArr1[i].toCharArray();
             strArr1[i]="";
@@ -76,9 +76,9 @@ public class TextFormatter {
                 strArr1[i] += temp[j];
             }
         }
-
-        showStringInArray(strArr1);
-
+//
+//        showStringInArray(strArr1);
+//
         for (int i=0; i<strArr1.length; i++) {
             if (strArr1[i].equalsIgnoreCase(strArr2[i])) {
                 isPalHere=true;
