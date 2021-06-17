@@ -7,7 +7,7 @@ public class Running {
 // 1) Вырезать подстроку из строки начиная с первого вхождения символа (А) до,
 // последнего вхождения сивола(B).
 
-        String s = "iT'Ti A tsEsT STriNG, which waw WRITING WIHiw different seCes";
+        String s = "iT'Ti Aц tsEsT STriNG, which waw WRIщTING WIHiw different seCes";
 
         Cutter newCut = new Cutter(s, 'a', 'd');
 
@@ -26,7 +26,7 @@ public class Running {
 /*         s = s.replace(' ', '\n');
          System.out.println(s);*/
         newCut = new Cutter(s);
-        System.out.println("3) Here is palindroms: " + newCut.palindromeSearch());
+        System.out.println("3) Here is palindromes: " + newCut.palindromeSearch());
 
     }
 }
