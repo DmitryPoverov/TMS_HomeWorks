@@ -1,4 +1,4 @@
-package HW9.Task1_2;
+package HW9.Task1_2_3;
 
 import java.util.Arrays;
 
