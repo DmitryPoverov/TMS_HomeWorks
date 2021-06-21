@@ -94,8 +94,7 @@ public class TextFormatter {
 
     public void sentenceChecker() {
 
-        s = s.replace("   " , " ");
-        s = s.replace("  " , " ");
+        s = s.replaceAll("\\s+", " ");
         s = s.replace(". " , ".");
 //
 //        System.out.println(s);

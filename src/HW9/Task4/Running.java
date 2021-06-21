@@ -1,5 +1,12 @@
 package HW9.Task4;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import HW9.Task1_2_3.*;
+
 public class Running {
 
     public static void main(String[] args) {
@@ -20,7 +27,43 @@ public class Running {
 
         tf.sentenceChecker();
 
-        System.out.println("Is palindromes here: " + tf.isPalindromes("Aquas rebel read."));
+        FileInputStream fileIS = null;
+        InputStreamReader inputSR = null;
+        String str = "";
+        int b;
+
+        try {                                       // попытка прочитать файл содержащий ту же строку, что и String s
+            fileIS = new FileInputStream("C:/Users/PD/IdeaProjects/TMS_HomeWorks/src/HW9/Task4/TEst.txt");
+            inputSR = new InputStreamReader(fileIS);
+            while ((b = inputSR.read()) != -1) {
+                str +=(char)b;
+            }
+        } catch (FileNotFoundException e1) {
+            System.out.println("Exception 1");
+        } catch (IOException e2) {
+            System.out.println("Exception 2");
+        } finally {
+            try {
+                fileIS.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                inputSR.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println(str);
+
+        Cutter ctr1 = new Cutter(str);
+
+        System.out.println(ctr1.palindromeSearch());
+
+        System.out.println("\nIs palindromes here: " + tf.isPalindromes(str));
+
+
 
     }
 }
