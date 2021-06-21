@@ -42,6 +42,11 @@ public class Cutter {
 
     public String palindromeSearch() {
 
+        s = s.replaceAll("\\s+", " ");
+//         s = s.replaceAll("\\s{2,}", " ");
+
+        System.out.println(s);
+
         int zeroCounter = 0;
         char[] charArray1 = s.toCharArray();                    // переделываем исходную строку в массив char[]
         char[] charArray2 = s.toCharArray();                    // заполняем его исходной строкой

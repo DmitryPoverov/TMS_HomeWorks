@@ -7,7 +7,7 @@ public class Running {
 // 1) Вырезать подстроку из строки начиная с первого вхождения символа (А) до,
 // последнего вхождения сивола(B).
 
-        String s = "iT'Ti Aц tsEsT STriNG, which waw WRIщTING WIHiw different seCes";
+        String s = "iT'Ti Aц tsEsT            STriNG, which      waw WRIщTING WIHiw different seCes";
 
         Cutter newCut = new Cutter(s, 'a', 'd');
 
