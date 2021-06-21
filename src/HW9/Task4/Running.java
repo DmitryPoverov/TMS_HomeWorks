@@ -59,11 +59,8 @@ public class Running {
 
         Cutter ctr1 = new Cutter(str);
 
-        System.out.println(ctr1.palindromeSearch());
-
         System.out.println("\nIs palindromes here: " + tf.isPalindromes(str));
 
-
-
+        System.out.println(ctr1.palindromeSearch());
     }
 }
