@@ -23,8 +23,6 @@ public class Running {
 // запуска программы должен создать файл, который будет содержать в себе
 // только палиндромы.
 
-/*         s = s.replace(' ', '\n');
-         System.out.println(s);*/
         newCut = new Cutter(s);
         System.out.println("3) Here is palindromes: " + newCut.palindromeSearch());
 
