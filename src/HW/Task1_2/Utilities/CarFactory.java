@@ -11,8 +11,8 @@ public class CarFactory {
 
         for (int i=0; i<num; i++) {
             cars[i] = new Car(Brands.values()[rnd.nextInt(Brands.values().length)].toString(),
-                    rnd.nextInt(150)+100,
-                    (rnd.nextInt(10)+5)*100);
+                    rnd.nextInt(150)+150,
+                    (rnd.nextInt(90))*100);
         }
         return cars;
     }

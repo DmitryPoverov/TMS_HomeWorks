@@ -42,13 +42,24 @@ public class Car {
 //        this.price = price;
 //    }
 //
+    public String getBrand() {
+        return brand;
+    }
+    public int getSpeed3() {
+        return speed;
+    }
+    public int getPrice3() {
+        return price;
+    }
+
+
     public void start() throws OddException {
         Random rNum = new Random();
         int num = rNum.nextInt(21);
          if (num%2==0) {
-             throw new OddException(brand, num);
+             throw new OddException(this, num);
          } else {
-             System.out.println(brand + " started");
+             System.out.println(brand + "(" + speed + "|"  + price + ") started");
          }
     }
 }
