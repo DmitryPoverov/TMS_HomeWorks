@@ -3,7 +3,7 @@ package CW;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class InputStreamReaderCW {
+public class InputStreamReader_1_CW {
 
     public static void main(String[] args) {
 
