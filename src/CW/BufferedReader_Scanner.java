@@ -1,4 +1,4 @@
-package CW.Task1;
+package CW;
 
 import java.io.*;
 import java.util.Scanner;
