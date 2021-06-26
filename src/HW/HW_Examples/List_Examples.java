@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
-public class List_Examples /*implements Comparable <String>*/{
+public class List_Examples {
     public static void main(String[] args) {
 
         List <String> example1 = new ArrayList<>();
