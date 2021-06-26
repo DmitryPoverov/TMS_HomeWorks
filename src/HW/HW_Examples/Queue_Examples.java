@@ -3,7 +3,6 @@ package HW.HW_Examples;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.NoSuchElementException;
-import java.util.Queue;
 
 public class Queue_Examples {
     public static void main(String[] args) {
