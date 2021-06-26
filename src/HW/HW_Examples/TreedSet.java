@@ -56,6 +56,5 @@ public class TreedSet {
         for (String str: example1) {
             System.out.println(str);
         }
-
     }
 }
