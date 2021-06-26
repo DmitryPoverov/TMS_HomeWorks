@@ -96,9 +96,4 @@ public class List_Examples /*implements Comparable <String>*/{
             System.out.println(str);
         }
     }
-//
-//    @Override
-//    public int compareTo(String o) {
-//        return 0;
-//    }
 }
