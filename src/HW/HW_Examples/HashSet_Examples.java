@@ -54,6 +54,5 @@ public class HashSet_Examples {
 
         b1 = example1.add("String 2");
         System.out.println("\nWas \"String 2\" added to example1: " + b1);
-
     }
 }
