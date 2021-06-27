@@ -7,7 +7,7 @@
 // • Сортировка
 // • и т. д
 
-package HW.HW_Examples;
+package HW.HW_Examples.Interfaces_Examples;
 
 import java.util.ArrayList;
 import java.util.Arrays;

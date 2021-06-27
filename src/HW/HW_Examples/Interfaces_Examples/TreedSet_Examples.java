@@ -1,4 +1,4 @@
-package HW.HW_Examples;
+package HW.HW_Examples.Interfaces_Examples;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,6 @@ import java.util.TreeSet;
 
 public class TreedSet_Examples {
     public static void main(String[] args) {
-
 
         Set<String> example1 = new TreeSet<>();
         example1.add("String F");
@@ -48,7 +47,6 @@ public class TreedSet_Examples {
 
         System.out.println("\n" + "Example1 size: " + example1.size());
         System.out.println("Example2 size: " + example2.size() + "\n");
-
 
         b1 = example1.add("String 2");
         System.out.println("Was \"String 2\" added to example1: " + b1 + "\n");

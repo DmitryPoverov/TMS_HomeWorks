@@ -1,4 +1,4 @@
-package HW.HW_Examples;
+package HW.HW_Examples.Interfaces_Examples;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
