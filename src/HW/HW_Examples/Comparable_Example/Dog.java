@@ -1,6 +1,6 @@
 package HW.HW_Examples.Comparable_Example;
 
-public class Dog {
+public class Dog implements Comparable<Dog> {
 
     private int age;
     private String name;
@@ -29,4 +29,16 @@ public class Dog {
         return "Dog: " + age + ", " + name + ", " + weight + ".";
     }
 
+    @Override
+    public int compareTo(Dog o) {
+        int i = 0;
+        if (weight < o.getWeight()) {
+            i = -1;
+        } else if (weight > o.getWeight()) {
+            i = 1;
+        } else if (weight == o.getWeight()) {
+            i = 0;
+        }
+        return i;
+    }
 }
