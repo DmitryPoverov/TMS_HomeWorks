@@ -2,7 +2,7 @@ package HW.HW_Examples.Comparable_Example;
 
 import java.util.Comparator;
 
-public class DogComparator implements Comparator<Dog> {
+public class DogComparator3 implements Comparator<Dog> {
 
     @Override
     public int compare(Dog d1, Dog d2) {
@@ -16,4 +16,5 @@ public class DogComparator implements Comparator<Dog> {
         }
         return i;
     }
+
 }
