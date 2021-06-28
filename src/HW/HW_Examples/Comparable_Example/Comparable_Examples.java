@@ -21,6 +21,7 @@ public class Comparable_Examples {
         Comparator<Dog> dCompN = new DogComparator2();
         Comparator<Dog> dCompW = new DogComparator3();
 
+        System.out.println(dog2 == dog5);
 
         System.out.println("\nkennel1---------------------------");
 
