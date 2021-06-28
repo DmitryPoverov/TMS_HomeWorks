@@ -29,6 +29,19 @@ public class Comparable_Examples {
             System.out.println(d);
         }
 
+        System.out.println("\nkennel1-Iterator-ListIterator-----");
+        ListIterator<Dog> lIDog = kennel1.listIterator();
+        Iterator<Dog> iD = kennel1.iterator();
+        System.out.println(iD.next());
+        System.out.println(iD.next());
+        System.out.println(iD.next());
+        System.out.println(lIDog.next());
+        System.out.println(lIDog.next());
+        System.out.println(lIDog.next());
+        System.out.println(lIDog.previous());
+        System.out.println(lIDog.next());
+
+
         System.out.println("\nkennel2---------------------------");
 
         Deque<Dog> kennel2 = DogAdder.Addition2(dog3, dog4, dog5);
