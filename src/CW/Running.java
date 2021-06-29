@@ -2,8 +2,8 @@ package CW;
 
 import CW.Utilities.MyComparator;
 import CW.Utilities.Type;
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Running {
     public static void main(String[] args) {
