@@ -1,7 +1,7 @@
-package HW3_Interfaces.Clothes.Wardrobe;
+package HW3_Interfaces.Clothes_Complicated.Wardrobe;
 
-import HW3_Interfaces.Clothes.Clothes_Interface.Pants_Interface;
-import HW3_Interfaces.Clothes.Utils.Colors;
+import HW3_Interfaces.Clothes_Complicated.Clothes_Interface.Pants_Interface;
+import HW3_Interfaces.Clothes_Complicated.Utils.Colors;
 
 public class WinterPants implements Pants_Interface {
 
@@ -24,11 +24,11 @@ public class WinterPants implements Pants_Interface {
 
     @Override
     public void putOn() {
-        System.out.println("- a winter " + color.getColor() + " pants. Price: " + price);
+        System.out.println("- a winter " + color.getColor() + " pants");
     }
 
     @Override
     public void takeOff() {
-        System.out.println("- a winter " + color.getColor() + " pants.");
+        System.out.println("- a winter " + color.getColor() + " pants");
     }
 }

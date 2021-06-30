@@ -1,7 +1,7 @@
-package HW3_Interfaces.Clothes.Wardrobe;
+package HW3_Interfaces.Clothes_Complicated.Wardrobe;
 
-import HW3_Interfaces.Clothes.Clothes_Interface.Jacket_Interface;
-import HW3_Interfaces.Clothes.Utils.Colors;
+import HW3_Interfaces.Clothes_Complicated.Clothes_Interface.Jacket_Interface;
+import HW3_Interfaces.Clothes_Complicated.Utils.Colors;
 
 public class WinterJacket implements Jacket_Interface {
 
@@ -24,11 +24,11 @@ public class WinterJacket implements Jacket_Interface {
 
     @Override
     public void putOn() {
-        System.out.println("- a winter " + color.getColor() + " jacket. Price: " + price);
+        System.out.println("- a " + color.getColor() + " jacket");
     }
 
     @Override
     public void takeOff() {
-        System.out.println("- a winter " + color.getColor() + " jacket.");
+        System.out.println("- a winter " + color.getColor() + " jacket");
     }
 }
