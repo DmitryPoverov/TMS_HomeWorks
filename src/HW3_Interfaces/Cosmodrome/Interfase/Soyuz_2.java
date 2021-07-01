@@ -13,7 +13,7 @@ public class Soyuz_2 implements IStart {
 
     @Override
     public void engineStart() {
-        System.out.println("Валера, бля, поднажми: почти завелась.");
+        System.out.println("Валера, бля, почти завелась.");
     }
 
     @Override
