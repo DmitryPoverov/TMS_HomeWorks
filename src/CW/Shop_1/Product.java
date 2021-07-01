@@ -1,8 +1,6 @@
-package CW;
+package CW.Shop_1;
 
-import CW.Utilities.Type;
-
-import java.util.Objects;
+import CW.Shop_1.Utilities.Type;
 
 public class Product {
 

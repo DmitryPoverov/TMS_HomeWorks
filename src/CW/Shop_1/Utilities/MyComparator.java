@@ -1,6 +1,6 @@
-package CW.Utilities;
+package CW.Shop_1.Utilities;
 
-import CW.Product;
+import CW.Shop_1.Product;
 
 import java.util.Comparator;
 

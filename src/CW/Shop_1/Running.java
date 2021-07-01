@@ -1,9 +1,8 @@
-package CW;
+package CW.Shop_1;
 
-import CW.Utilities.MyComparator;
-import CW.Utilities.Type;
+import CW.Shop_1.Utilities.MyComparator;
+import CW.Shop_1.Utilities.Type;
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Running {
     public static void main(String[] args) {

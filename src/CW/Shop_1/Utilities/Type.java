@@ -1,4 +1,4 @@
-package CW.Utilities;
+package CW.Shop_1.Utilities;
 
 public enum Type {
 

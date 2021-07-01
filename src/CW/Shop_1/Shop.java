@@ -1,4 +1,4 @@
-package CW;
+package CW.Shop_1;
 
 import java.util.Iterator;
 import java.util.List;
