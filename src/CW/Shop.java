@@ -1,7 +1,5 @@
 package CW;
 
-import CW.Product;
-
 import java.util.Iterator;
 import java.util.List;
 
@@ -55,6 +53,4 @@ public class Shop {
             System.out.println(shopProducts.get(i));
         }
     }
-
-
 }
