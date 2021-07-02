@@ -18,9 +18,10 @@ public class Running {
         System.out.println(time1);
 
         LocalTime time2 = LocalTime.now();
+        System.out.println("time2 :" + time2);
         Set<String> zones = ZoneId.getAvailableZoneIds();
         for (String z : zones) {
-            System.out.println(z + " ");
+            System.out.printf("%s, %s, %s");
         }
 
         Period period1y4m7d = Period.of(1, 2, 20);
@@ -39,14 +40,15 @@ public class Running {
         System.out.println(time6);
         DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         LocalDateTime time7 = LocalDateTime.parse("11-12-2018 12:10:35", formatter1);
+        System.out.println(time7);
+
+        System.out.println("-----------------------------------------------------");
 
         Predicate <Integer> p1 = g -> g == 7;
         Predicate <Integer> p2 = g -> g == 8;
 
         System.out.println(p1.or(p2).test(7));
         System.out.println(p1.and(p2).test(7));
-
-
 
     }
 }
