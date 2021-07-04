@@ -24,6 +24,5 @@ public class Running {
         }
 
         System.out.println(newCar2);
-
     }
 }
