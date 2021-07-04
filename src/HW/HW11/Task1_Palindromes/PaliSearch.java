@@ -11,13 +11,11 @@ public class PaliSearch {
 
         if(text.equalsIgnoreCase(sB.reverse().toString())) {
             try (FileWriter fw = new FileWriter("PaliWrite.txt", true)) {
-                System.out.println("To \'PaliWrite.txt\' goes: " + text);
                 fw.write(text + "\n");
             }
             catch (IOException ioe) {
                 System.out.println(ioe.getMessage());
             }
         }
-
     }
 }

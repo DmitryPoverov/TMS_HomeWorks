@@ -15,8 +15,7 @@ public class Running {
                 if (i != '\r') {
                     sb.append((char)i);
                 } else {
-                    fr.read();
-                    System.out.println("To 'pSearch()' goes:\n" + sb);
+                    fr.read();  // Для Windows нужно пропустить слудующий символ, т.к. в ней перенос - это \r\n
                     PaliSearch.pSearch(sb.toString());
                     sb = new StringBuilder();
                 }
