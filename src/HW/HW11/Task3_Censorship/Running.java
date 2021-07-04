@@ -1,4 +1,4 @@
-package HW.HW11.SerializeAuto.Task3_Censorship;
+package HW.HW11.Task3_Censorship;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
