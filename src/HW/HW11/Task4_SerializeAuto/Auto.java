@@ -1,4 +1,4 @@
-package HW.HW11.SerializeAuto;
+package HW.HW11.Task4_SerializeAuto;
 
 import java.io.Serializable;
 

@@ -1,0 +1,7 @@
+civic
+level
+market
+Paris
+rotator
+Rotor
+referer
