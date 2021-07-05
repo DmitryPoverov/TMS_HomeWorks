@@ -38,15 +38,15 @@ public class Running {
         catch (IOException iOE) {
             System.out.println(iOE.getMessage());
         }
-
-        System.out.println(str1);
-
+//
+//        System.out.println(str1);
+//
         str1 = str1.replace('\n', ' ');
         str1 = str1.replace(".", ". ");
         str1 = str1.replaceAll("\\s+", " ");
-
-        System.out.println(str1);
-
+//
+//        System.out.println(str1);
+//
         String[] strArray = str1.split("\\. ");
 //
 //        System.out.println("##########################");
