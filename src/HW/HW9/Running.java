@@ -88,7 +88,7 @@ public class Running {
 
             if (s.equalsIgnoreCase(temp.reverse().toString())) {
                 return true;
-            } else if (tempChar.length == 5) {
+            } else if (tempChar.length >= 3 && tempChar.length <= 5) {
                 return true;
             }
         }
