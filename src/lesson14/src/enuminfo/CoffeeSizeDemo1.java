@@ -1,0 +1,10 @@
+package lesson14.src.enuminfo;
+
+public class CoffeeSizeDemo1 {
+    public static void main(String[] args) {
+        CoffeeSize coffeeSize = CoffeeSize.BIG;
+        if (coffeeSize == CoffeeSize.BIG) {
+            System.out.println(coffeeSize);
+        }
+    }
+}
