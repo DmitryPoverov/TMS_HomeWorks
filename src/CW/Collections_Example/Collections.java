@@ -1,4 +1,4 @@
-package CW.Exam_Collect;
+package CW.Collections_Example;
 
 import java.util.ArrayList;
 import java.util.List;
