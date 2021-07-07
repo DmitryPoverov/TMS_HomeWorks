@@ -33,8 +33,17 @@ public class Shop {
         }
     }
 
-    public void deleteItem() {
-
+    public void deleteItem(Integer id) {
+        int pointer = -1;
+        for (int i=0; i<shopGoods.size(); i++) {
+            if (shopGoods.get(i).getId() != id) {
+                System.out.println("Element with " + id + " number doesn't exist.");
+            } else {
+                pointer = i;
+                System.out.println("Pointer =" + pointer);
+            }
+        }
+        shopGoods.remove(pointer);
     }
 
     public void editItem() {
