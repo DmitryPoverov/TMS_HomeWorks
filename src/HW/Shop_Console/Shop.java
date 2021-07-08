@@ -22,8 +22,8 @@ public class Shop {
 
     public void addItem(Goods wG) {
         boolean b = true;
-        for (int i=0; i<shopGoods.size(); i++) {
-            if (shopGoods.get(i).getId() == wG.getId()) {
+        for (Goods shopGood : shopGoods) {
+            if (shopGood.getId() == wG.getId()) {
                 System.out.println("___ Such element exists");
                 b = false;
             }
@@ -35,9 +35,9 @@ public class Shop {
 
     public void addItem(int id, String name, int price) {
         boolean b = true;
-        for (int i=0; i<shopGoods.size(); i++) {
-            if (shopGoods.get(i).getId() == id) {
-                System.out.println("___ Such element exists");
+        for (Goods shopGood : shopGoods) {
+            if (shopGood.getId() == id) {
+                System.out.println("_ Such element exists");
                 b = false;
             }
         }
