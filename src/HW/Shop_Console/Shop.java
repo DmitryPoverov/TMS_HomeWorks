@@ -24,7 +24,7 @@ public class Shop {
         boolean b = true;
         for (int i=0; i<shopGoods.size(); i++) {
             if (shopGoods.get(i).getId() == wG.getId()) {
-                System.out.println("Such element exists");
+                System.out.println("___ Such element exists");
                 b = false;
             }
         }
@@ -33,20 +33,43 @@ public class Shop {
         }
     }
 
+    public void addItem(int id, String name, int price) {
+        boolean b = true;
+        for (int i=0; i<shopGoods.size(); i++) {
+            if (shopGoods.get(i).getId() == id) {
+                System.out.println("___ Such element exists");
+                b = false;
+            }
+        }
+        if (b){
+            shopGoods.add(new Goods(id, name, price));
+            System.out.println("_ ADDED");
+        }
+    }
+
     public void deleteItem(Integer id) {
-        int pointer = -1;
+        int pointer = -10;
         for (int i=0; i<shopGoods.size(); i++) {
             if (shopGoods.get(i).getId() != id) {
-                System.out.println("Element with " + id + " number doesn't exist.");
             } else {
                 pointer = i;
-                System.out.println("Pointer =" + pointer);
             }
         }
         shopGoods.remove(pointer);
+        System.out.println("_ DELETED");
     }
 
-    public void editItem() {
-
+    public void editItem(int idOld, int idNew, String name, int price) {
+        int pointer = -10;
+        for (int i=0; i<shopGoods.size(); i++) {
+            if (shopGoods.get(i).getId() != idOld) {
+            } else {
+                pointer = i;
+            }
+        }
+        shopGoods.get(pointer).setId(idNew);
+        shopGoods.get(pointer).setName(name);
+        shopGoods.get(pointer).setPrice(price);
+        System.out.println("_ EDITED");
     }
 }

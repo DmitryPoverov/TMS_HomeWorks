@@ -16,17 +16,31 @@ public class ShopConsole {
     }
 
     public void showMenu() {
-        System.out.println("\n------------------------------------------\n| 1 - to show goods (lowest to highest). |\n" +
-                "| 2 - to show goods (highest to lowest). |\n" +
-                "| 3 - to show goods (newest to oldest). |\n" +
-                "| 4 - to show goods (oldest to newest). |\n" +
-
-                "| 0 - to exit the shop.\t\t\t\t\t |\n------------------------------------------");
+        System.out.println("""
+                        \t\t------------------------------------------
+                        \t\t|              Shop menu                 |
+                        \t\t|----------------------------------------|
+                        \t\t| 1 - to show goods (lowest to highest). |
+                        \t\t| 2 - to show goods (highest to lowest). |
+                        \t\t| 3 - to show goods (newest to oldest).  |
+                        \t\t| 4 - to show goods (oldest to newest).  |
+                        \t\t| 5 - to delete item (enter the id)      |
+                        \t\t| 6 - to add item (enter the id)         |
+                        \t\t| 7 - to edit item (enter the id)        |
+                        \t\t| 0 - to exit the shop.                  |
+                        \t\t------------------------------------------""");
     }
 
     public int getUserChoice() {
-        System.out.print("Enter your choice here: ");
+        System.out.print("Enter your choice here (integer): ");
         int choice =  new Scanner(System.in).nextInt();
+        System.out.println();
+        return choice;
+    }
+
+        public String getUserStringChoice() {
+        System.out.print("Enter your choice here (String): ");
+        String choice =  new Scanner(System.in).nextLine();
         System.out.println();
         return choice;
     }
@@ -37,10 +51,11 @@ public class ShopConsole {
             case 2 -> currentShop.showAll(new ComparatorPriceDown());
             case 3 -> currentShop.showAll(new ComparatorNewOld());
             case 4 -> currentShop.showAll(new ComparatorOldNew());
-
-
+            case 5 -> currentShop.deleteItem(getUserChoice());
+            case 6 -> currentShop.addItem(getUserChoice(), getUserStringChoice(), getUserChoice());
+            case 7 -> currentShop.editItem(getUserChoice(), getUserChoice(), getUserStringChoice(), getUserChoice());
             case 0 -> System.out.println("EXIT THE SHOP");
-            default -> System.out.println("!!! The wrong choice !!!");
+            default -> System.out.println("!!! The wrong choice !!!\n");
         }
     }
 }
