@@ -41,9 +41,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return name + '\'' +
-                ", age=" + age +
-                ", job=" + job;
+        return name + ", " + age +
+                "years, job: " + job;
     }
 
     @Override

@@ -28,7 +28,6 @@ public class Job {
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", salary=" + salary;
+        return name + " (salary: " + salary + ')';
     }
 }
