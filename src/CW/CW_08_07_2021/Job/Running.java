@@ -75,10 +75,12 @@ public class Running {
                 .summaryStatistics();
 
         System.out.printf(
-                "max %d\n" +
-                "min %d\n" +
-                "middle %.2f \n" +
-                "summary %d\n",
+                """
+                        max:     %d
+                        min:     %d
+                        middle:  %.2f\s
+                        summary: %d
+                        """,
                 statistics.getMax(), statistics.getMin(), statistics.getAverage(), statistics.getSum());
     }
 }
