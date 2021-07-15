@@ -31,7 +31,7 @@ public class Employee {
         this.age = age;
     }
 
-    public Set<Job> getJob() {
+    public Set<Job> getJobs() {
         return job;
     }
 
