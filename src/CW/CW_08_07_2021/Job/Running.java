@@ -65,13 +65,6 @@ public class Running {
                 .toArray()).sum();
         System.out.println(totalSalary);
 
-//        System.out.println("The biggest salary:");
-//        Set<Job> set1 = employeesList.stream().map(Employee::getJobs).mapToInt(i -> i.getSalary);
-
-        Set<Integer> jobSalaries = null;
-
-
-
         System.out.println("\nSalary statistics:");
         IntSummaryStatistics statistics = employeesList.stream()
                 .map(Employee::getJobs)
