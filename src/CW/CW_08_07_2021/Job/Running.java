@@ -24,7 +24,7 @@ public class Running {
 
         List<Employee> employeesList = List.of
                 (employee1, employee2, employee3, employee4, employee5,
-                 employee6, employee7, employee8, employee9, employee0);
+                        employee6, employee7, employee8, employee9, employee0);
 
         Optional<Employee> opt = employeesList.stream().min(Comparator.comparing(Employee::getAge));
 
@@ -53,7 +53,7 @@ public class Running {
 
         System.out.println("\nA list after filtering by age (less than 35):");
         employeesList.stream()
-                .takeWhile(tw -> tw.getAge()<35)
+                .takeWhile(tw -> tw.getAge() < 35)
                 .sorted(Comparator.comparing(Employee::getName))
                 .forEach(System.out::println);
 
@@ -72,6 +72,23 @@ public class Running {
                 .mapToInt(Job::getSalary)
                 .summaryStatistics();
 
+        System.out.println("############################################");
+        Optional <Employee> richest = employeesList.stream()
+                .sorted((a, b) -> {
+                    Set<Job> setA = a.getJobs();
+                    int sumA = 0;
+                    for (Job job : setA) {
+                        sumA += job.getSalary();
+                    }
+                    Set<Job> setB = b.getJobs();
+                    int sumB = 0;
+                    for (Job job : setB) {
+                        sumB += job.getSalary();
+                    }
+                    return Integer.compare(sumB, sumA);
+                }).findFirst();
+        System.out.println(richest.get());
+
         System.out.printf(
                 """
                         max:     %d
@@ -82,8 +99,8 @@ public class Running {
                 statistics.getMax(), statistics.getMin(), statistics.getAverage(), statistics.getSum());
 
 
-        double result = employeesList.stream().filter(i -> i.getAge()>35).count();
-        System.out.println("\nMen over 35: " + (int)result);
+        double result = employeesList.stream().filter(i -> i.getAge() > 35).count();
+        System.out.println("\nMen over 35: " + (int) result);
 
         employeesList.stream()
                 .filter(i -> i.getName().toLowerCase().contains("a") && i.getName().toLowerCase().contains("n"))
@@ -106,7 +123,7 @@ public class Running {
 
         System.out.println("\nMore than 2 job:");
         List<Employee> employees = employeesList.stream()
-                .filter(i -> i.getJobs().size()>2)
+                .filter(i -> i.getJobs().size() > 2)
                 .collect(Collectors.toList());
         employees.forEach(System.out::println);
 
