@@ -1,13 +1,11 @@
-package CW;
+package CW.dateAPI;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Set;
-import java.util.function.Function;
-import java.util.function.Predicate;
 
-public class Running {
+public class dateApiExample {
     public static void main(String[] args) {
 
         LocalDate obj1 = LocalDate.now();
@@ -41,14 +39,5 @@ public class Running {
         DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         LocalDateTime time7 = LocalDateTime.parse("11-12-2018 12:10:35", formatter1);
         System.out.println(time7);
-
-        System.out.println("-----------------------------------------------------");
-
-        Predicate <Integer> p1 = g -> g == 7;
-        Predicate <Integer> p2 = g -> g == 8;
-
-        System.out.println(p1.or(p2).test(7));
-        System.out.println(p1.and(p2).test(7));
-
     }
 }
