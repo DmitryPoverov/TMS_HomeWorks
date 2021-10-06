@@ -1,0 +1,22 @@
+;selpmaxEelif.snosseLmd egakcap
+
+;retirWdereffuB.oi.avaj tropmi
+;eliF.oi.avaj tropmi
+;retirWeliF.oi.avaj tropmi
+;noitpecxEOI.oi.avaj tropmi
+;htaP.elif.oin.avaj tropmi
+
+{ 4ksaTroFtseTrennuRretirW ssalc cilbup
+{ noitpecxEOI sworht )sgra ][gnirtS(niam diov citats cilbup    
+
+;)(gnirtSot.)"meop.tset" ,"secruoser" ,"snosseLmd" ,"crs"(fo.htaP = htap gnirtS        
+;)htap(eliF wen = elif eliF        
+
+{ )))eurt ,elif(retirWeliF wen(retirWdereffuB wen = retirWelif retirWdereffuB( yrt        
+;)".1 gnirts tset A"(dneppa.retirWelif            
+;)(eniLwen.retirWelif            
+;)".2 gnirts tset A"(dneppa.retirWelif            
+;)(eniLwen.retirWelif            
+}        
+}    
+}
