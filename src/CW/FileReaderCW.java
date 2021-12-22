@@ -9,7 +9,7 @@ public class FileReaderCW {
     public static void main(String[] args) {
 
         try (FileReader fReader = new FileReader("TestText.txt");
-             FileWriter fWriter = new FileWriter("TestText.txt", true)) {
+             FileWriter fWriter = new FileWriter("src/CW/TestText.txt", true)) {
 
             int i;
 
